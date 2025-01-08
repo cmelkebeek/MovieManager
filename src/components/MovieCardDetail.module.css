@@ -1,0 +1,73 @@
+.movieCard {
+    display: flex;
+    gap: 20px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .moviePoster img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .movieContent {
+    flex: 1;
+    color: #333;
+  }
+  
+  .movieHeader h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .movieHeader span {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .movieDetails {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .movieActions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .iconButton {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .trailerButton {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .movieSynopsis h2 {
+    margin-top: 0;
+  }
+  
+  .movieSynopsis p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  

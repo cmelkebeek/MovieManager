@@ -1,0 +1,19 @@
+.scoreCircle {
+    font-family: Arial, sans-serif;
+  }
+  
+  .progressCircle {
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 0.4s ease;
+  }
+  
+  .scoreLabel {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+  }
+  

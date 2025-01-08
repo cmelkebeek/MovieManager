@@ -1,0 +1,31 @@
+.castCard {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .castImage {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .castInfo {
+    padding: 10px;
+  }
+  
+  .castName {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .castRole {
+    font-size: 14px;
+    color: #666;
+  }
+  
