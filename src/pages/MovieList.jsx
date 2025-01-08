@@ -5,6 +5,7 @@ const MovieList = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
+  const API_KEY = "3a20035313bcf0f46a9509302cfcbcd9";
 
   const searchData = movies.filter((currentMovie) =>
     currentMovie.title.toLowerCase().includes(search.toLowerCase())
@@ -12,7 +13,7 @@ const MovieList = () => {
 
   const fetchData = async () => {
     try {
-        const response = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=3a20035313bcf0f46a9509302cfcbcd9&language=fr");
+        const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=fr`);
         const data = await response.json();
         setMovies(data.results);
     }

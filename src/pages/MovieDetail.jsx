@@ -9,13 +9,15 @@ const MovieDetail = () => {
     const [cast, setCast] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const API_KEY = "3a20035313bcf0f46a9509302cfcbcd9";
+
     const fetchDataMovie = async () => {
         try {
-            const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=3a20035313bcf0f46a9509302cfcbcd9&language=fr`);
+            const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=fr`);
             const data = await response.json();
             setMovie(data);
 
-            const responseCast = await fetch(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=3a20035313bcf0f46a9509302cfcbcd9&language=fr`);
+            const responseCast = await fetch(`https://api.themoviedb.org/3/movie/${id}/credits?api_key=${API_KEY}&language=fr`);
             const dataCast = await responseCast.json();
             setCast(dataCast.cast.slice(0, 10));
         }
